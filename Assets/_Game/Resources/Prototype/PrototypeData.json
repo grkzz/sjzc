@@ -1,0 +1,362 @@
+{
+  "startingHealth": 60,
+  "slots": 5,
+  "earlySlots": 3,
+  "expandOnPersonalTurn": 4,
+  "questGoal": 5,
+  "maxHand": 10,
+  "monsters": [
+    {
+      "id": "triangle",
+      "name": "三角积木蛇",
+      "race": "灵族",
+      "elements": [
+        "火"
+      ],
+      "attack": [
+        6,
+        6,
+        10
+      ],
+      "health": [
+        3,
+        5,
+        7
+      ],
+      "ability": "burn",
+      "description": "回合结束：消耗 1 蕴灵，对随机敌兽造成 3/6/9 伤害。"
+    },
+    {
+      "id": "turtle",
+      "name": "司南鳌",
+      "race": "灵族",
+      "elements": [
+        "草"
+      ],
+      "attack": [
+        2,
+        3,
+        4
+      ],
+      "health": [
+        10,
+        15,
+        20
+      ],
+      "ability": "accelerate",
+      "description": "回合结束：有蕴灵时使一枚蛋加速 1 回合。"
+    },
+    {
+      "id": "croc",
+      "name": "咬咬咬人鳄",
+      "race": "灵族",
+      "elements": [
+        "水"
+      ],
+      "attack": [
+        7,
+        10,
+        18
+      ],
+      "health": [
+        7,
+        10,
+        18
+      ],
+      "ability": "guard",
+      "description": "受击后：每点蕴灵提供 20% 概率摧毁攻击者，最高 100%。"
+    },
+    {
+      "id": "bear",
+      "name": "忍者熊桑",
+      "race": "灵族",
+      "elements": [
+        "水"
+      ],
+      "attack": [
+        5,
+        8,
+        13
+      ],
+      "health": [
+        13,
+        21,
+        28
+      ],
+      "ability": "copy",
+      "description": "登场时蕴灵至少 2：召唤一个不再触发复制的自身复制。"
+    },
+    {
+      "id": "frog",
+      "name": "跳跳发条蛙",
+      "race": "灵族",
+      "elements": [
+        "水"
+      ],
+      "attack": [
+        5,
+        10,
+        14
+      ],
+      "health": [
+        8,
+        11,
+        16
+      ],
+      "ability": "share",
+      "description": "攻击后：其他灵族获得等同自身蕴灵的蕴灵。"
+    },
+    {
+      "id": "mitten",
+      "name": "烘焙手套扇贝",
+      "race": "灵族",
+      "elements": [
+        "火"
+      ],
+      "attack": [
+        9,
+        12,
+        16
+      ],
+      "health": [
+        12,
+        18,
+        25
+      ],
+      "ability": "none",
+      "description": "没有额外效果，拥有较高的基础数值。"
+    },
+    {
+      "id": "flower",
+      "name": "花洒鼠",
+      "race": "灵族",
+      "elements": [
+        "火",
+        "水"
+      ],
+      "attack": [
+        6,
+        9,
+        13
+      ],
+      "health": [
+        8,
+        11,
+        15
+      ],
+      "ability": "burst",
+      "description": "主动：消耗全部自身蕴灵，攻击增加 5/8/12 × 消耗值。"
+    },
+    {
+      "id": "static",
+      "name": "静电把手团子",
+      "race": "灵族",
+      "elements": [
+        "电"
+      ],
+      "attack": [
+        2,
+        4,
+        7
+      ],
+      "health": [
+        7,
+        12,
+        19
+      ],
+      "ability": "thorns",
+      "description": "其他友方受击时：对攻击者造成 1/2/3 × 蕴灵伤害。"
+    },
+    {
+      "id": "magnet",
+      "name": "吸铁蟹bro",
+      "race": "灵族",
+      "elements": [
+        "电"
+      ],
+      "attack": [
+        3,
+        5,
+        8
+      ],
+      "health": [
+        9,
+        12,
+        16
+      ],
+      "ability": "draw",
+      "description": "主动（每回合一次）：消耗全部蕴灵，抽 1/2/3 张，自身失去 5 × 抽牌数生命。"
+    },
+    {
+      "id": "stove",
+      "name": "超频电气灶",
+      "race": "灵族",
+      "elements": [
+        "火",
+        "电"
+      ],
+      "attack": [
+        6,
+        12,
+        18
+      ],
+      "health": [
+        10,
+        14,
+        20
+      ],
+      "ability": "multi",
+      "description": "有可消耗蕴灵时，可消耗 1 点追加一次攻击；对决斗者伤害减半。"
+    },
+    {
+      "id": "lighter",
+      "name": "老式打火机鹳",
+      "race": "灵族",
+      "elements": [
+        "火"
+      ],
+      "attack": [
+        4,
+        5,
+        7
+      ],
+      "health": [
+        10,
+        12,
+        15
+      ],
+      "ability": "none",
+      "description": "原型中仅实现基础数值；登场消除蛋防御效果待扩展。"
+    },
+    {
+      "id": "boss",
+      "name": "最强毁灭机器人",
+      "race": "灵族",
+      "elements": [
+        "电"
+      ],
+      "attack": [
+        30,
+        30,
+        30
+      ],
+      "health": [
+        50,
+        50,
+        50
+      ],
+      "ability": "boss",
+      "description": "登场摧毁敌方最多 2 张手牌；其他己方灵族获得 3 点光环蕴灵。"
+    }
+  ],
+  "eggs": [
+    {
+      "id": "water_croc",
+      "name": "水灵原始蛋",
+      "core": "croc",
+      "pool": [
+        "croc",
+        "flower",
+        "frog",
+        "bear"
+      ],
+      "weights": [
+        40,
+        35,
+        20,
+        5
+      ],
+      "elements": [
+        "水",
+        "火"
+      ],
+      "turns": 1
+    },
+    {
+      "id": "water_bear",
+      "name": "回忆原始蛋",
+      "core": "bear",
+      "pool": [
+        "bear",
+        "croc",
+        "flower",
+        "frog"
+      ],
+      "weights": [
+        40,
+        35,
+        20,
+        5
+      ],
+      "elements": [
+        "水",
+        "火"
+      ],
+      "turns": 1
+    },
+    {
+      "id": "fire_triangle",
+      "name": "焰灵原始蛋",
+      "core": "triangle",
+      "pool": [
+        "triangle",
+        "mitten",
+        "lighter",
+        "flower"
+      ],
+      "weights": [
+        50,
+        25,
+        20,
+        5
+      ],
+      "elements": [
+        "火",
+        "水"
+      ],
+      "turns": 1
+    },
+    {
+      "id": "fire_mitten",
+      "name": "暖炉原始蛋",
+      "core": "mitten",
+      "pool": [
+        "mitten",
+        "triangle",
+        "lighter",
+        "flower"
+      ],
+      "weights": [
+        50,
+        25,
+        20,
+        5
+      ],
+      "elements": [
+        "火",
+        "水"
+      ],
+      "turns": 1
+    },
+    {
+      "id": "electric",
+      "name": "电灵原始蛋",
+      "core": "static",
+      "pool": [
+        "static",
+        "magnet",
+        "stove"
+      ],
+      "weights": [
+        65,
+        30,
+        5
+      ],
+      "elements": [
+        "电",
+        "火"
+      ],
+      "turns": 1
+    }
+  ]
+}
